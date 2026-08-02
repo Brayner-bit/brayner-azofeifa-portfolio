@@ -1,6 +1,17 @@
+document.documentElement.classList.add('js');
+
 const toggle = document.querySelector('.lang-toggle');
 const cvLink = document.querySelector('[data-cv-link]');
+const caseToggles = document.querySelectorAll('[data-case-toggle]');
 let language = 'es';
+
+function updateCaseToggleText(button) {
+  const expanded = button.getAttribute('aria-expanded') === 'true';
+  const key = expanded
+    ? (language === 'es' ? 'hideEs' : 'hideEn')
+    : (language === 'es' ? 'showEs' : 'showEn');
+  button.textContent = button.dataset[key];
+}
 
 function setLanguage(next) {
   language = next;
@@ -13,7 +24,26 @@ function setLanguage(next) {
   });
   cvLink.href = next === 'es' ? 'Brayner_Azofeifa_CV_ES_2026-08-02.pdf' : 'Brayner_Azofeifa_CV_EN_2026-08-02.pdf';
   document.title = next === 'es' ? 'Brayner Azofeifa | Licenciado en Ingeniería de Sistemas' : 'Brayner Azofeifa | Systems Engineer';
+  caseToggles.forEach(updateCaseToggleText);
 }
+
+caseToggles.forEach((button) => {
+  const card = button.closest('.case-card');
+  const target = document.getElementById(button.getAttribute('aria-controls'));
+  if (!card || !target) return;
+
+  card.classList.remove('is-expanded');
+  button.setAttribute('aria-expanded', 'false');
+  updateCaseToggleText(button);
+
+  button.addEventListener('click', () => {
+    const expanded = button.getAttribute('aria-expanded') === 'true';
+    const nextExpanded = !expanded;
+    button.setAttribute('aria-expanded', String(nextExpanded));
+    card.classList.toggle('is-expanded', nextExpanded);
+    updateCaseToggleText(button);
+  });
+});
 
 toggle.addEventListener('click', () => setLanguage(language === 'es' ? 'en' : 'es'));
 document.getElementById('year').textContent = new Date().getFullYear();

@@ -75,3 +75,35 @@ footer{justify-content:flex-start}
   .contact-links{display:grid;grid-template-columns:1fr;margin-top:1.8rem}
   .contact-link{justify-content:center;padding:.7rem .95rem}
 }
+
+.site-header nav{gap:clamp(.9rem,2.2vw,2rem)}
+
+.case-list{display:grid;gap:1.2rem;border-top:1px solid var(--ink)}
+.case-card{display:grid;grid-template-columns:70px minmax(0,1fr);gap:clamp(1.2rem,3vw,2.2rem);padding:2rem 0;border-bottom:1px solid var(--line)}
+.case-number{font:800 clamp(1.4rem,3vw,2.4rem)/1 "Manrope";letter-spacing:-.06em;color:#9b9b95}
+.case-body h3{font:700 clamp(1.45rem,3vw,2.35rem)/1.08 "Manrope";letter-spacing:-.035em;margin:0 0 1rem;max-width:850px}
+.case-body p{max-width:860px;margin:0 0 1rem;color:#222;font-size:1rem}
+.js .case-card:not(.is-expanded) .case-more{display:none}
+.case-toggle{margin:.15rem 0 1.15rem;padding:.65rem .9rem;border:1px solid var(--ink);border-radius:999px;background:transparent;color:var(--ink);font:800 .82rem "Manrope";cursor:pointer;transition:background .2s ease,color .2s ease,transform .2s ease}
+.case-toggle:hover,.case-toggle:focus-visible{background:var(--ink);color:#fff;transform:translateY(-1px)}
+.case-toggle:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.case-tags{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.25rem;max-width:920px}
+.case-tags span{display:inline-flex;align-items:center;min-height:1.85rem;padding:.35rem .6rem;border:1px solid var(--line);border-radius:999px;background:#fff;color:#222;font-size:.78rem;font-weight:700;letter-spacing:.01em}
+
+.contact-plain{margin-top:1.5rem;max-width:920px;color:#333;font-size:clamp(.9rem,1.2vw,1rem);font-weight:400;line-height:1.7}
+.contact-plain p{margin:0;overflow-wrap:anywhere}
+
+@media(max-width:720px){
+  .case-list{margin-top:.5rem}
+  .case-card{grid-template-columns:1fr;gap:.85rem;padding:1.75rem 0}
+  .case-number{font-size:1.4rem}
+  .case-body h3{font-size:1.45rem}
+  .case-tags{gap:.4rem}
+  .case-tags span{font-size:.74rem}
+  .contact-plain{margin-top:1.35rem;text-align:left}
+}
+
+@media print{
+  .js .case-card:not(.is-expanded) .case-more{display:block}
+  .case-toggle{display:none}
+}

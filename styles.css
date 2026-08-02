@@ -63,6 +63,7 @@
 }
 
 .contact-links{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2.2rem;max-width:920px}.contact-link{display:inline-flex;align-items:center;gap:.55rem;min-height:2.55rem;padding:.65rem .9rem;border:1px solid var(--ink);border-radius:999px;text-decoration:none;background:transparent;font:800 .9rem "Manrope";letter-spacing:.01em;transition:transform .2s ease,background .2s ease,color .2s ease}.contact-link:hover{background:var(--ink);color:#fff;transform:translateY(-2px)}.contact-icon{display:inline-grid;place-items:center;width:1.05rem;height:1.05rem;flex:0 0 1.05rem}.contact-icon svg{display:block;width:1rem!important;height:1rem!important;max-width:1rem;max-height:1rem;fill:currentColor}.contact-link small{display:none}
+.contact-icon .whatsapp-icon{transform:translate(.02rem,.01rem)}
 
 @media(max-width:720px){
   .contact-links{display:grid;grid-template-columns:1fr;margin-top:1.8rem}

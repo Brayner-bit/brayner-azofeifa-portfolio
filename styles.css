@@ -68,6 +68,8 @@
 .contact-link:hover .contact-icon-img,.contact-link:focus-visible .contact-icon-img,.contact-link:active .contact-icon-img{filter:brightness(0) invert(1)}
 .contact-icon .line-icon{fill:none;stroke:currentColor;stroke-width:2.05;stroke-linecap:round;stroke-linejoin:round}
 .contact-icon .line-icon path,.contact-icon .line-icon rect{vector-effect:non-scaling-stroke}
+.company-link{text-decoration:none;text-underline-offset:.18em}.company-link:hover,.company-link:focus-visible{text-decoration:underline}
+footer{justify-content:flex-start}
 
 @media(max-width:720px){
   .contact-links{display:grid;grid-template-columns:1fr;margin-top:1.8rem}

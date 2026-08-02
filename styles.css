@@ -62,9 +62,9 @@
   .job-meta span{display:block;margin-bottom:.25rem}
 }
 
-.contact-links{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2.2rem;max-width:920px}.contact-link{display:inline-flex;align-items:center;gap:.55rem;min-height:2.55rem;padding:.65rem .9rem;border:1px solid var(--ink);border-radius:999px;text-decoration:none;background:transparent;font:800 .9rem "Manrope";letter-spacing:.01em;transition:transform .2s ease,background .2s ease,color .2s ease}.contact-link:hover{background:var(--ink);color:#fff;transform:translateY(-2px)}.contact-icon{display:inline-grid;place-items:center;width:1.05rem;height:1.05rem;flex:0 0 1.05rem}.contact-icon svg{display:block;width:1rem!important;height:1rem!important;max-width:1rem;max-height:1rem;fill:currentColor}.contact-link small{display:none}
-.contact-icon-img{display:block;width:1rem;height:1rem;object-fit:contain}
-.contact-link:hover .contact-icon-img{filter:invert(1)}
+.contact-links{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2.2rem;max-width:920px}.contact-link{display:inline-flex;align-items:center;gap:.55rem;min-height:2.55rem;padding:.65rem .9rem;border:1px solid var(--ink);border-radius:999px;text-decoration:none;background:transparent;font:800 .9rem "Manrope";letter-spacing:.01em;transition:transform .2s ease,background .2s ease,color .2s ease}.contact-link:hover{background:var(--ink);color:#fff;transform:translateY(-2px)}.contact-icon{display:inline-grid;place-items:center;width:1.08rem;height:1.08rem;flex:0 0 1.08rem}.contact-icon svg{display:block;width:1rem!important;height:1rem!important;max-width:1rem;max-height:1rem;fill:currentColor}.contact-link small{display:none}
+.contact-icon-img{display:block;width:1.08rem;height:1.08rem;object-fit:contain;filter:brightness(0)}
+.contact-link:hover .contact-icon-img,.contact-link:focus-visible .contact-icon-img,.contact-link:active .contact-icon-img{filter:brightness(0) invert(1)}
 .contact-icon .line-icon{fill:none;stroke:currentColor;stroke-width:2.05;stroke-linecap:round;stroke-linejoin:round}
 .contact-icon .line-icon path,.contact-icon .line-icon rect{vector-effect:non-scaling-stroke}
 

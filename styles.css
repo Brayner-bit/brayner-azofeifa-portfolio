@@ -78,6 +78,8 @@ footer{justify-content:flex-start}
 
 .site-header nav{gap:clamp(.9rem,2.2vw,2rem)}
 
+.experience.section{padding-bottom:clamp(1.5rem,2.5vw,2.5rem)}
+.selected-work.section{padding-top:clamp(1.5rem,2.5vw,2.5rem)}
 .case-list{display:grid;gap:1.2rem;border-top:1px solid var(--ink)}
 .case-card{display:grid;grid-template-columns:70px minmax(0,1fr);gap:clamp(1.2rem,3vw,2.2rem);padding:2rem 0;border-bottom:1px solid var(--line)}
 .case-number{font:800 clamp(1.4rem,3vw,2.4rem)/1 "Manrope";letter-spacing:-.06em;color:#9b9b95}

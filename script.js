@@ -11,7 +11,7 @@ function setLanguage(next) {
   toggle.querySelectorAll('span').forEach((item) => {
     item.classList.toggle('active', item.textContent.toLowerCase() === next);
   });
-  cvLink.href = next === 'es' ? 'Brayner_Azofeifa_CV_ES.pdf' : 'Brayner_Azofeifa_CV_EN.pdf';
+  cvLink.href = next === 'es' ? 'Brayner_Azofeifa_CV_ES_2026-08-02.pdf' : 'Brayner_Azofeifa_CV_EN_2026-08-02.pdf';
   document.title = next === 'es' ? 'Brayner Azofeifa | Licenciado en Ingeniería de Sistemas' : 'Brayner Azofeifa | Systems Engineer';
 }
 

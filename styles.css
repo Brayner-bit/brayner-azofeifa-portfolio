@@ -62,9 +62,9 @@
   .job-meta span{display:block;margin-bottom:.25rem}
 }
 
-.contact-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.9rem;margin-top:2.4rem;max-width:920px}.contact-link{display:grid;grid-template-columns:auto 1fr;grid-template-areas:"icon label" "icon detail";gap:.1rem .85rem;align-items:center;padding:1rem;border:1px solid var(--ink);text-decoration:none;background:transparent;transition:transform .2s ease,background .2s ease,color .2s ease}.contact-link:hover{background:var(--ink);color:#fff;transform:translateY(-2px)}.contact-icon{grid-area:icon;display:grid;place-items:center;width:2.4rem;height:2.4rem;border:1px solid currentColor;border-radius:50%}.contact-icon svg{width:1.2rem;height:1.2rem;fill:currentColor}.contact-link span:not(.contact-icon){grid-area:label;font:800 .95rem "Manrope";letter-spacing:.01em}.contact-link small{grid-area:detail;color:var(--muted);font-size:.78rem;overflow-wrap:anywhere}.contact-link:hover small{color:#ddd}
+.contact-links{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2.2rem;max-width:920px}.contact-link{display:inline-flex;align-items:center;gap:.55rem;min-height:2.55rem;padding:.65rem .9rem;border:1px solid var(--ink);border-radius:999px;text-decoration:none;background:transparent;font:800 .9rem "Manrope";letter-spacing:.01em;transition:transform .2s ease,background .2s ease,color .2s ease}.contact-link:hover{background:var(--ink);color:#fff;transform:translateY(-2px)}.contact-icon{display:inline-grid;place-items:center;width:1.05rem;height:1.05rem;flex:0 0 1.05rem}.contact-icon svg{display:block;width:1rem!important;height:1rem!important;max-width:1rem;max-height:1rem;fill:currentColor}.contact-link small{display:none}
 
 @media(max-width:720px){
-  .contact-links{grid-template-columns:1fr;margin-top:1.8rem}
-  .contact-link{padding:1rem .95rem}
+  .contact-links{display:grid;grid-template-columns:1fr;margin-top:1.8rem}
+  .contact-link{justify-content:center;padding:.7rem .95rem}
 }

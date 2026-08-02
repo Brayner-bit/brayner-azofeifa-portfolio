@@ -12,7 +12,7 @@ function setLanguage(next) {
     item.classList.toggle('active', item.textContent.toLowerCase() === next);
   });
   cvLink.href = next === 'es' ? 'Brayner_Azofeifa_CV_ES.pdf' : 'Brayner_Azofeifa_CV_EN.pdf';
-  document.title = next === 'es' ? 'Brayner Azofeifa | Ingeniero de Sistemas' : 'Brayner Azofeifa | Systems Engineer';
+  document.title = next === 'es' ? 'Brayner Azofeifa | Licenciado en Ingeniería de Sistemas' : 'Brayner Azofeifa | Systems Engineer';
 }
 
 toggle.addEventListener('click', () => setLanguage(language === 'es' ? 'en' : 'es'));

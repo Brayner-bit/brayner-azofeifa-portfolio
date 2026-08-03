@@ -70,6 +70,7 @@
 .contact-icon .line-icon path,.contact-icon .line-icon rect{vector-effect:non-scaling-stroke}
 .company-link{text-decoration:none;text-underline-offset:.18em}.company-link:hover,.company-link:focus-visible{text-decoration:underline}
 footer{justify-content:flex-start}
+.credential-title{display:grid;gap:.28rem;justify-items:start}.credential-link{color:var(--muted);font-size:.78rem;font-weight:700;text-decoration:none;text-underline-offset:.18em}.credential-link:hover,.credential-link:focus-visible{color:var(--ink);text-decoration:underline}
 
 @media(max-width:720px){
   .contact-links{display:grid;grid-template-columns:1fr;margin-top:1.8rem}
